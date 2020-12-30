@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1b00ed4b-3e49-4cd5-8793-6da9d34e6cfc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>application.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebProject</Name>
+    <RootNamespace>FlaskWebProject</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>MSBuild|cms-venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="application.py" />
+    <Compile Include="config.py" />
+    <Compile Include="FlaskWebProject\forms.py" />
+    <Compile Include="FlaskWebProject\models.py" />
+    <Compile Include="FlaskWebProject\__init__.py" />
+    <Compile Include="FlaskWebProject\views.py" />
+    <Compile Include="tests\test_hello_world.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="FlaskWebProject\" />
+    <Folder Include="FlaskWebProject\static\" />
+    <Folder Include="FlaskWebProject\static\content\" />
+    <Folder Include="FlaskWebProject\static\fonts\" />
+    <Folder Include="FlaskWebProject\static\scripts\" />
+    <Folder Include="FlaskWebProject\templates\" />
+    <Folder Include="flask_session\" />
+    <Folder Include="sql_scripts\" />
+    <Folder Include="static\" />
+    <Folder Include="static\content\" />
+    <Folder Include="static\fonts\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\scripts\" />
+    <Folder Include="tests\" />
+    <Folder Include="__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="images\article-cms-solution.png" />
+    <Content Include="images\azure-portal-resource-group.png" />
+    <Content Include="images\blob-solution.png" />
+    <Content Include="images\log-solution.png" />
+    <Content Include="images\sql-storage-solution.png" />
+    <Content Include="images\uri-redirects-solution.png" />
+    <Content Include="flask_session\2029240f6d1128be89ddc32729463129" />
+    <Content Include="flask_session\f43bee5c05426f1788ecd4512efbe903" />
+    <Content Include="LICENSE" />
+    <Content Include="README.md" />
+    <Content Include="FlaskWebProject\static\content\bootstrap.css" />
+    <Content Include="FlaskWebProject\static\content\bootstrap.min.css" />
+    <Content Include="FlaskWebProject\static\content\site.css" />
+    <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FlaskWebProject\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FlaskWebProject\static\scripts\bootstrap.js" />
+    <Content Include="FlaskWebProject\static\scripts\bootstrap.min.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery-1.10.2.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="FlaskWebProject\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery.validate.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery.validate.min.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="FlaskWebProject\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="FlaskWebProject\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="FlaskWebProject\static\scripts\respond.js" />
+    <Content Include="FlaskWebProject\static\scripts\respond.min.js" />
+    <Content Include="FlaskWebProject\static\scripts\_references.js" />
+    <Content Include="FlaskWebProject\templates\about.html" />
+    <Content Include="FlaskWebProject\templates\contact.html" />
+    <Content Include="FlaskWebProject\templates\index.html" />
+    <Content Include="FlaskWebProject\templates\layout.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="sql_scripts\posts-table-init.sql" />
+    <Content Include="sql_scripts\users-table-init.sql" />
+    <Content Include="static\content\bootstrap.css" />
+    <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\site.css" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\sign-in-with-ms.svg" />
+    <Content Include="static\scripts\bootstrap.js" />
+    <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="static\scripts\jquery.validate.js" />
+    <Content Include="static\scripts\jquery.validate.min.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="static\scripts\modernizr-2.6.2.js" />
+    <Content Include="static\scripts\respond.js" />
+    <Content Include="static\scripts\respond.min.js" />
+    <Content Include="WRITEUP.md" />
+    <Content Include="__pycache__\forms.cpython-37.pyc" />
+    <Content Include="__pycache__\forms.cpython-39.pyc" />
+    <Content Include="__pycache__\models.cpython-37.pyc" />
+    <Content Include="__pycache__\models.cpython-39.pyc" />
+    <Content Include="__pycache__\views.cpython-37.pyc" />
+    <Content Include="__pycache__\views.cpython-39.pyc" />
+    <Content Include="__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="__pycache__\__init__.cpython-39.pyc" />
+    <None Include="static\scripts\_references.js" />
+    <None Include="static\scripts\jquery.validate-vsdoc.js" />
+    <None Include="static\scripts\jquery-1.10.2.intellisense.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="cms-venv\">
+      <Id>cms-venv</Id>
+      <Version>3.9</Version>
+      <Description>cms-venv (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,4 @@
+DeployCMS/__originalProject/
+DeployCMS/CMSFlaskWebProject/FlaskWebProject/cms-venv/
+DeployCMS/CMSFlaskWebProject/FlaskWebProject/__pycache__/
+DeployCMS/CMSFlaskWebProject/FlaskWebProject/flask_session/
