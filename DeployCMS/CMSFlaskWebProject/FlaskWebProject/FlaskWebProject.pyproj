@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
+    <Folder Include="images_examples\" />
     <Folder Include="FlaskWebProject\" />
     <Folder Include="FlaskWebProject\static\" />
     <Folder Include="FlaskWebProject\static\content\" />
@@ -58,12 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="images\article-cms-solution.png" />
-    <Content Include="images\azure-portal-resource-group.png" />
+    <Content Include="images\azure-portal-resource-group.jpg" />
     <Content Include="images\blob-solution.png" />
-    <Content Include="images\log-solution.png" />
-    <Content Include="images\sql-storage-solution.png" />
-    <Content Include="images\uri-redirects-solution.png" />
+    <Content Include="images\sql-storage-solution.jpg" />
+    <Content Include="images_examples\article-cms-solution.png" />
+    <Content Include="images_examples\azure-portal-resource-group.png" />
+    <Content Include="images_examples\blob-solution.png" />
+    <Content Include="images_examples\log-solution.png" />
+    <Content Include="images_examples\sql-storage-solution.png" />
+    <Content Include="images_examples\uri-redirects-solution.png" />
     <Content Include="flask_session\2029240f6d1128be89ddc32729463129" />
     <Content Include="flask_session\f43bee5c05426f1788ecd4512efbe903" />
     <Content Include="LICENSE" />
