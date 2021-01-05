@@ -18,7 +18,7 @@
     <Name>FlaskWebProject</Name>
     <RootNamespace>FlaskWebProject</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <InterpreterId>MSBuild|cms-venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|cms-env|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -48,6 +48,8 @@
     <Folder Include="FlaskWebProject\static\scripts\" />
     <Folder Include="FlaskWebProject\templates\" />
     <Folder Include="flask_session\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="sql_scripts\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
@@ -71,6 +73,8 @@
     <Content Include="flask_session\2029240f6d1128be89ddc32729463129" />
     <Content Include="flask_session\f43bee5c05426f1788ecd4512efbe903" />
     <Content Include="LICENSE" />
+    <None Include="Properties\PublishProfiles\UdacityCMS - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\DeployCMS2 - Web Deploy.pubxml" />
     <Content Include="README.md" />
     <Content Include="FlaskWebProject\static\content\bootstrap.css" />
     <Content Include="FlaskWebProject\static\content\bootstrap.min.css" />
@@ -94,8 +98,6 @@
     <Content Include="FlaskWebProject\static\scripts\respond.js" />
     <Content Include="FlaskWebProject\static\scripts\respond.min.js" />
     <Content Include="FlaskWebProject\static\scripts\_references.js" />
-    <Content Include="FlaskWebProject\templates\about.html" />
-    <Content Include="FlaskWebProject\templates\contact.html" />
     <Content Include="FlaskWebProject\templates\index.html" />
     <Content Include="FlaskWebProject\templates\layout.html" />
     <Content Include="requirements.txt" />
@@ -135,10 +137,10 @@
     <None Include="static\scripts\jquery-1.10.2.intellisense.js" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="cms-venv\">
-      <Id>cms-venv</Id>
+    <Interpreter Include="cms-env\">
+      <Id>cms-env</Id>
       <Version>3.9</Version>
-      <Description>cms-venv (Python 3.9 (64-bit))</Description>
+      <Description>cms-env (Python 3.9 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>

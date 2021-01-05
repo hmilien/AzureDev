@@ -2,5 +2,10 @@ DeployCMS/__originalProject/
 DeployCMS/CMSFlaskWebProject/FlaskWebProject/cms-venv/
 DeployCMS/CMSFlaskWebProject/FlaskWebProject/__pycache__/
 DeployCMS/CMSFlaskWebProject/FlaskWebProject/flask_session/
-DeployCMS/CMSFlaskWebProject/FlaskWebProject/config.py
 
+Error MSB4019: The imported project "\Microsoft.PythonTools.Web.targets" was not found. Confirm that the expression in the Import declaration "C:\Program Files\dotnet\sdk\5.0.101\Microsoft\VisualStudio\v16.0\Python Tools\Microsoft.PythonTools.Web.targets" is correct, and that the file exists on disk.
+
+$env:FLASK_APP = "application.py:app"
+FLASK_APP=application.py
+/DeployCMS/CMSFlaskWebProject/FlaskWebProject/cms-env
+/DeployCMS/CMSFlaskWebProject/FlaskWebProject/obj/Any CPU/Release
