@@ -19,16 +19,6 @@ imageSourceUrl = 'https://'+ app.config['BLOB_ACCOUNT']  + '.blob.core.windows.n
 @app.route('/home')
 @login_required
 def home():
-    log = request.values.get('log_button')
-    if log:
-        if log == 'info':
-            app.logger.info('No issue.')
-        elif log == 'warning':
-            app.logger.warning('Warning occurred.')
-        elif log == 'error':
-            app.logger.error('Error occurred.')
-        elif log == 'critical':
-            app.logger.critical('Critical error occurred.')
     user = User.query.filter_by(username=current_user.username).first_or_404()
     posts = Post.query.all()
     return render_template(
@@ -70,8 +60,12 @@ def post(id):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    log = request.values.get('login')
     if current_user.is_authenticated:
+        app.logger.warning('User logged in.')
         return redirect(url_for('home'))
+    else:
+        app.logger.warning('Invalid credentials.')
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
