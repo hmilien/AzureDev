@@ -1,0 +1,12 @@
+						
+$env:SQL_SERVER = "udacitycms.database.windows.net"
+
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_SERVER="udacitycms.database.windows.net"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_DATABASE="udacitycms"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_USER_NAME="admin01"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_PASSWORD="UdacityCms75"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SECRET_KEY="53fe1178-84ce-434e-b151-5605dc46eec6"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings BLOB_ACCOUNT="cmsstoragehm"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings BLOB_STORAGE_KEY="b7hhT3Pj3s6Oy6f+rABZeQgh3OHa5HwIcb8jYBobn1E+RUmGEeKd3xQtDl3oBErCFY/A7sfyWwk4KRFzWAMOQg=="
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings BLOB_CONTAINER="images"
+az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQLALCHEMY_TRACK_MODIFICATIONS="False"
