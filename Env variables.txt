@@ -1,5 +1,13 @@
 						
+$env:FLAS_APP = "application:app"
 $env:SQL_SERVER = "udacitycms.database.windows.net"
+$env:SQL_DATABASE = "udacitycms"
+$env:SQL_USER_NAME = "admin01"
+$env:SQL_PASSWORD = "UdacityCms75"
+$env:SECRET_KEY = "53fe1178-84ce-434e-b151-5605dc46eec6"
+$env:BLOB_ACCOUNT = "cmsstoragehm"
+$env:BLOB_STORAGE_KEY = "b7hhT3Pj3s6Oy6f+rABZeQgh3OHa5HwIcb8jYBobn1E+RUmGEeKd3xQtDl3oBErCFY/A7sfyWwk4KRFzWAMOQg=="
+$env:BLOB_CONTAINER = "images"
 
 az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_SERVER="udacitycms.database.windows.net"
 az webapp config appsettings set --name UdacityCMS --resource-group DeployCMS --settings SQL_DATABASE="udacitycms"

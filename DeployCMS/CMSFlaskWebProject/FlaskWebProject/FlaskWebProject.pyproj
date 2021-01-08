@@ -73,8 +73,6 @@
     <Content Include="flask_session\2029240f6d1128be89ddc32729463129" />
     <Content Include="flask_session\f43bee5c05426f1788ecd4512efbe903" />
     <Content Include="LICENSE" />
-    <None Include="Properties\PublishProfiles\UdacityCMS - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\DeployCMS2 - Web Deploy.pubxml" />
     <Content Include="README.md" />
     <Content Include="FlaskWebProject\static\content\bootstrap.css" />
     <Content Include="FlaskWebProject\static\content\bootstrap.min.css" />
